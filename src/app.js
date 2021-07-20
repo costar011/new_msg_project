@@ -16,6 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use("/", globalRouter);
+app.use("/friends", globalRouter);
 
 app.listen(PORT, () => {
   console.log(`💙 http://localhost:${PORT} 💙 Server Start`);
